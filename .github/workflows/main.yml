@@ -1,0 +1,12 @@
+name: Primer WorkFlow
+
+on: push
+
+jobs: 
+  validar: 
+    run-on: ubuntu-latest
+
+    steps: 
+      - name: Mostrar mensaje
+        run: echo "Hola mundo actions"
+        
