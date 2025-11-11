@@ -1,7 +1,10 @@
 name: Primer WorkFlow
 
-on: push
-
+on: 
+  push: 
+    branches:
+      - main
+      - featurex
 
 
 jobs:
