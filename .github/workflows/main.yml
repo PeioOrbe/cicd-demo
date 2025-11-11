@@ -2,13 +2,23 @@ name: Primer WorkFlow
 
 on: push
 
-jobs: 
-  validar: 
-    runs-on: ubuntu-latest
 
-    steps: 
+
+jobs:
+  test: 
+    runs-on: ubuntu-latest
+    steps:
+    
       - name: Descargar el codigo
         uses: actions/checkout@v5
+
+
+  
+  validar: 
+    runs-on: ubuntu-latest
+    needs: test
+    steps: 
+
 
 
       -
