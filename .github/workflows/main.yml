@@ -8,7 +8,7 @@ jobs:
 
     steps: 
       - name: Descargar el codigo
-        run: git clone https://github.com/ulopeznovoa/AS-CI-CD-ej1/blob/main/test.py
+        run: git clone https://github.com/ulopeznovoa/AS-CI-CD-ej1
       
       - name: Instalar pytest
         run: pip install pytest
