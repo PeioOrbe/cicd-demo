@@ -7,12 +7,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps: 
-      - name: Mostrar mensaje
-        run: echo "Hola mundo actions"
+      - name: Descargar el codigo
+        run: git clone https://github.com/ulopeznovoa/AS-CI-CD-ej1/blob/main/test.py
       
-      - name: Bajar codigo
-        uses: actions/checkout@v5
+      - name: Instalar pytest
+        run: pip install pytest
 
-      - name: probar codigo
-        run: python3 main.py
+      - name: Utilizar pytest
+        run: pytest test.py
         
